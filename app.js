@@ -1,7 +1,13 @@
 const DOMSelectors = {
     button: document.getElementById("click me"),
-    text: document.querySelectorAll("#text"),
-    
+    text: document.querySelectorAll("#select"),
+    input: document.querySelector(`#input`),
 }
 
-console.log (DOMSelectors.button);
+function add() {
+
+} 
+
+document.body.style.backgroundColor = "purple";
+
+console.log (DOMSelectors);
