@@ -8,10 +8,18 @@ const DOMSelectors = {
     input: document.querySelector(`#input`),
 }
 
+
+
 function add() {
     DOMSelectors.button.insertAdjacentElement("#input")
     {DOMSelectors.liquid.onClick} {DOMSelectors.color.onClick}
 } 
+
+function remove() {
+
+}
+
+
 
 document.body.style.backgroundColor = "purple";
 
