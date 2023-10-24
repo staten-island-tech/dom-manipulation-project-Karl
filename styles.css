@@ -1,0 +1,17 @@
+body,
+html, *{
+    font-size: 20px;
+}
+
+.gallery {
+        margin-top: 5vh;
+        margin-bottom: 1vh;
+        width: 80%;
+        padding-top: 2vh;
+        border-radius: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+}

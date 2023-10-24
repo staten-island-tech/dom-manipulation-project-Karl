@@ -1,3 +1,5 @@
+
+
 const DOMSelectors = {
     input: document.querySelector("#input"),
     liquid: document.querySelector(".liquid"),
@@ -16,7 +18,7 @@ function add() {
 } 
 
 function remove() {
-
+    DOMSelectors.button
 }
 
 
