@@ -1,31 +1,47 @@
 const DOMSelectors = {
-    input: document.querySelector("#input"),
-    liquid: document.querySelector(".liquid"),
-    color: document.querySelector(".liquid"),
-    button: document.getElementById("SubmitBtn"),
-    text: document.querySelectorAll("#select"),
-    input: document.querySelector(`#input`),
+    form: document.getElementById("form"),
+    input: document.querySelectorAll("input"),
+    liquid: document.getElementById("liquid"),
+    color: document.getElementById("color"),
+    link: document.getElementById("link"),
+    button: document.getElementById("btn"),
+    cards: document.querySelector(""),
 }
-
-document.getElementById("SubmitBtn").addEventListener("click", function(event){
-    event.preventDefault();
-}),
 
 
 function add() {
-    DOMSelectors.button.insertAdjacentHTML("#input")
-    {DOMSelectors.liquid.onClick} {DOMSelectors.color.onClick}
+    DOMSelectors.cards.insertAdjacentHTML("beforeend",
+    `<div class="cards">
+    <h2>${DOMSelectors.liquid.value}</h2>
+    <a href=${DOMSelectors.link}>click here</a>
+    <h3>${DOMSelectors.color.value}</h3>
+
+    <button class="clear">Remove</button>
+  </div>`);
+    
 } 
 
-
-function removeInput() {
-    DOMSelectors.button
+function clear() {
+    const clear = document.querySelectorAll(".clear");
+    clear.forEach((clicked) => {
+        clicked.addEventListener("click", function(clicked) {
+        clicked.target.parentElement.clear(); 
+        });
+    });
 }
 
-const btnRemove = document.getElementById("remove");
-btnRemove.addEventListener("")
 
-document.getElementById("button").addEventListener("click")event)
+function clearInput() {
+    
+}
+
+document.getElementById("button").addEventListener("click");
 document.body.style.backgroundColor = "purple";
 
-console.log (DOMSelectors);
+DOMSelectors.form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    add();
+    clear();
+    clearInput();
+}
+)

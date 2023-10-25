@@ -8,38 +8,36 @@
 </head>
 <body>
 
-<form action="" class="input">
-    <label for="liquid">Type a liquid</label><br>
-    <input type="text" id="liquid">
-    <label for="color">Type your liquid color</label><br>
-    <input type="text" id="color">
-    <button type = "submit">Submit here</button>
+<form action="" id="form">
+    <div class="input">
+        <label for="liquid">Type a liquid</label><br>
+        <input type="text" id="liquid">
+    </div>
+
+    <div class="input">
+        <label for="color">Liquid color</label><br>
+        <input type="text" id="color">
+    </div>
+    <div class="input">
+        <label for="Where to buy">Purchase liquid link</label><br>
+        <input type="link" id="link">
+    </div>
+
+    <button type = "submit" id="btn">Submit here</button>
 </form>
 
 
 
 <h2>What liquid do you enjoy</h2>
-<div class="gallery">
-    <div class="cards">
-    <h3>testing testing</h3>
-    </div>
-    <div class="cards">
-        <h3>testing testing</h3>
-        </div>
-        <div class="cards">
-            <h3>testing testing</h3>
-            </div>
-            <div class="cards">
-                <h3>testing testing</h3>
-                </div>
-                <div class="cards">
-                    <h3>testing testing</h3>
-                    </div>
 
-</div>
+<div class="gallery">
+<!--     <div class="cards">
+        <h2>${DOMSelectors.liquid.value}</h2>
+        <a href=${DOMSelectors.link}>click here</a>
+        <h3>${DOMSelectors.color.value}</h3>
     
-    <div class="image">
-    </div>
+        <button class="clear">Remove</button>
+      </div> -->
 </div>
 
     <script src="app.js"></script>
