@@ -12,6 +12,12 @@ html, *{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-content: center;
+}
+
+.card {
+    padding-top: 3vh;
+    border-radius: 5px;
+    background-color: blue;
 }
