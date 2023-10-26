@@ -5,24 +5,24 @@ const DOMSelectors = {
     color: document.getElementById("color"),
     link: document.getElementById("link"),
     button: document.getElementById("btn"),
-    cards: document.querySelector(""),
+    cards: document.querySelector("gallery"),
 }
 
 
 function add() {
-    DOMSelectors.cards.insertAdjacentHTML("beforeend",
+    DOMSelectors.insertAdjacentHTML("beforeend",
     `<div class="cards">
     <h2>${DOMSelectors.liquid.value}</h2>
-    <a href=${DOMSelectors.link}>click here</a>
+    <a href=${DOMSelectors.link.value}>click here</a>
     <h3>${DOMSelectors.color.value}</h3>
 
-    <button class="clear">Remove</button>
+    <button class = "Remove">Remove</button>
   </div>`);
     
 } 
 
 function clear() {
-    const clear = document.querySelectorAll(".clear");
+    const clear = document.cards.querySelectorAll(".clear");
     clear.forEach((clicked) => {
         clicked.addEventListener("click", function(clicked) {
         clicked.target.parentElement.clear(); 
@@ -32,11 +32,10 @@ function clear() {
 
 
 function clearInput() {
-    
+    DOMSelectors.liquid.value === "";
+    DOMSelectors.link.value === "";
+    DOMSelectors.color.value === "";
 }
-
-document.getElementById("button").addEventListener("click");
-document.body.style.backgroundColor = "purple";
 
 DOMSelectors.form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -45,3 +44,7 @@ DOMSelectors.form.addEventListener("submit", function(event) {
     clearInput();
 }
 )
+
+document.body.style.backgroundColor = "purple";
+
+/* document.getElementById("button").addEventListener("click"); */

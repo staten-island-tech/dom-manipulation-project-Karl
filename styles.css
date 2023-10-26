@@ -1,6 +1,7 @@
 body,
 html, *{
     font-size: 20px;
+    text-align: center;
 }
 
 
@@ -8,11 +9,10 @@ h2 {
     text-align: center;
 }
 .gallery {
-        margin-top: 5vh;
-        margin-bottom: 1vh;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
         width: 80%;
         padding-top: 2vh;
-        border-radius: 5vh;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -21,7 +21,16 @@ h2 {
 }
 
 .cards {
+    text-align: center;
     padding-top: 3vh;
-    border-radius: 5px;
     background-color: blue;
+    display: flex;
+    width: 30vh;
+
+}
+
+#image {
+    justify-content: center;
+    width: 30vh;
+    height: 50vh;
 }
