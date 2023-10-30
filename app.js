@@ -10,15 +10,13 @@ const DOMSelectors = {
 
 
 function add() {
-    DOMSelectors.insertAdjacentHTML("beforeend",
+    DOMSelectors.insertAdjacentHTML("beforeend"
     `<div class="cards">
         <h2>${DOMSelectors.liquid.value}</h2>
-
         <h3>${DOMSelectors.color.value}</h3>
         <button class="clear">Remove</button>
     </div>`);
-    
-} 
+}
 
 function clear() {
     const clear = document.cards.querySelectorAll(".clear");
