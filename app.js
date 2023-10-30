@@ -10,28 +10,31 @@ const DOMSelectors = {
 
 
 function add() {
-    DOMSelectors.insertAdjacentHTML("beforeend"
+    let insert = document.querySelector(".gallery");
+    insert.insertAdjacentHTML("beforeend",
     `<div class="cards">
         <h2>${DOMSelectors.liquid.value}</h2>
         <h3>${DOMSelectors.color.value}</h3>
+        <div id="img">
+            <img src= "${DOMSelectors.link.value}" alt="">
+        </div>
         <button class="clear">Remove</button>
     </div>`);
 }
 
 function clear() {
-    const clear = document.cards.querySelectorAll(".clear");
-    clear.forEach((clicked) => {
-        clicked.addEventListener('click', function(clicked) {
-        clicked.target.parentElement.clear();
-        });
+    document.querySelectorAll(".clear").forEach((clicked) => {
+        clicked.addEventListener("click", function(clicked) {
+        clicked.target.parentElement.remove();
+        })
     });
 }
 
 
 function clearInput() {
-    DOMSelectors.liquid.value === "";
-    DOMSelectors.link.value === "";
-    DOMSelectors.color.value === "";
+    DOMSelectors.liquid.value = "";
+    DOMSelectors.link.value = "";
+    DOMSelectors.color.value = "";
 }
 
 DOMSelectors.form.addEventListener("submit", function(event) {
@@ -39,10 +42,4 @@ DOMSelectors.form.addEventListener("submit", function(event) {
     add();
     clear();
     clearInput();
-
-}
-)
-
-
-
-/* document.getElementById("button").addEventListener("click"); */
+});

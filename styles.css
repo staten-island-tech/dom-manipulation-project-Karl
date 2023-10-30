@@ -36,7 +36,7 @@ h2 {
 }
 
 #img {
-    width: 20rem;
-    height: 10rem;
-    flex-basis: 80%;
+    min-width: 20rem;
+    min-height: 20rem;
+
 }
