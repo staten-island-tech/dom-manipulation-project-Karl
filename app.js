@@ -13,7 +13,7 @@ function add() {
     let insert = document.querySelector(".gallery");
     insert.insertAdjacentHTML("beforeend",
     `<div class="cards">
-        <h2>${DOMSelectors.liquid.value}</h2>
+        <h3>${DOMSelectors.liquid.value}</h3>
         <h3>${DOMSelectors.color.value}</h3>
         <div id="img">
             <img src= "${DOMSelectors.link.value}" alt="">
@@ -28,7 +28,7 @@ function clear() {
         clicked.target.parentElement.remove();
         })
     });
-}
+} 
 
 
 function clearInput() {

@@ -1,13 +1,34 @@
 body,
 html, *{
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     text-align: center;
     margin: 0 auto;
 }
 
-
+h1 {
+    background-color: 1F31D6;
+    font-size: 2.5rem;
+    padding-bottom: 2vh;
+    margin-bottom: 4vh;
+    position: relative;
+}
 h2 {
     text-align: center;
+    font-size: 1.5rem;
+}
+
+#liquid, #color, #image {
+    width: 60vh;
+    border-radius: 5rem;
+}
+
+#btn {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    margin-top: 1.5vh;
+    margin-bottom: 2vh;
 }
 
 .gallery {
@@ -15,20 +36,24 @@ h2 {
     padding-top: 2vh;
     border-radius: 5vh;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-content: center;
 }
 
 .cards{
-    border-radius: 5vh;
+    background-color: red;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
     margin: 2.5vh;
-    flex-basis: 20%;
+    flex-basis: 15%;
+}
+
+h3 {
+    font-size: 1.25rem;
 }
 
 .clear {
