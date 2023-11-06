@@ -15,8 +15,8 @@ function add() {
     `<div class="cards">
         <h3>${DOMSelectors.liquid.value}</h3>
         <h3>${DOMSelectors.color.value}</h3>
-        <div id="img">
-            <img src= "${DOMSelectors.link.value}" alt="">
+        <div>
+        <img id= "img" src= "${DOMSelectors.link.value}" alt="">
         </div>
         <button class="clear">Remove</button>
     </div>`);

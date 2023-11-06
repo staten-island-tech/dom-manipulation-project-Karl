@@ -7,15 +7,11 @@ html, *{
 }
 
 h1 {
-    background-color: 1F31D6;
+    background-color: rgb(59, 59, 212);
     font-size: 2.5rem;
     padding-bottom: 2vh;
     margin-bottom: 4vh;
     position: relative;
-}
-h2 {
-    text-align: center;
-    font-size: 1.5rem;
 }
 
 #liquid, #color, #image {
@@ -31,8 +27,13 @@ h2 {
     margin-bottom: 2vh;
 }
 
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .gallery {
-    width: 80%;
+    width: 90%;
     padding-top: 2vh;
     border-radius: 5vh;
     display: flex;
@@ -49,7 +50,9 @@ h2 {
     padding-right: 10px;
     padding-top: 10px;
     margin: 2.5vh;
-    flex-basis: 15%;
+    flex-basis: 20%;
+    min-width: 16rem;
+    min-height: 18rem;
 }
 
 h3 {
@@ -57,11 +60,16 @@ h3 {
 }
 
 .clear {
-    align-items: center;
+    align-self: flex-end;
+    display: flex;
+    background-color: black;
+    color: white;
+    position: relative;
 }
 
 #img {
-    min-width: 20rem;
-    min-height: 20rem;
-
+    width: 100%;
+    height: 65%;
+    margin-top: 1vh;
+    margin-bottom: 2vh
 }
